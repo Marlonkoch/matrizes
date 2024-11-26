@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matrizes Energéticas - Explorando Fontes e Aplicações de Energia no Mundo">
+    <meta name="author" content="Marlon">
+    <title>Matrizes Energéticas</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Matrizes Energéticas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introducao">Introdução</a></li>
+                    <li><a href="#tipos">Tipos</a></li>
+                    <li><a href="#aplicacoes">Aplicações</a></li>
+                    <li><a href="#calculadora">Calculadora</a></li>
+                    <li><a href="#grafico">Gráficos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="introducao">
+        <div class="container">
+            <h2>O que são Matrizes Energéticas?</h2>
+            <p>As matrizes energéticas representam as fontes de energia utilizadas em um determinado local ou país, oferecendo uma visão detalhada sobre como essas fontes estão distribuídas e utilizadas ao longo do tempo. Elas são essenciais para o planejamento estratégico no setor energético.</p>
+            <img src="energia.jpg" alt="Imagem ilustrativa sobre energia" class="imagem-introducao">
+        </div>
+    </section>
+
+    <section id="tipos">
+        <div class="container">
+            <h2>Tipos de Matrizes Energéticas</h2>
+            <div class="card">
+                <h3>Matriz Energética Nacional</h3>
+                <p>Reflete as fontes de energia utilizadas em todo o país, com foco nas energias renováveis e não-renováveis.</p>
+            </div>
+            <div class="card">
+                <h3>Matriz Energética Regional</h3>
+                <p>Refere-se à distribuição energética em diferentes regiões, levando em consideração as particularidades locais.</p>
+            </div>
+            <div class="card">
+                <h3>Matriz Energética Setorial</h3>
+                <p>Divide as fontes de energia por setor (residencial, industrial, transporte, etc.) para análise de consumo e eficiência.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="aplicacoes">
+        <div class="container">
+            <h2>Aplicações das Matrizes Energéticas</h2>
+            <p>Essas matrizes ajudam na análise da eficiência energética, no planejamento de políticas públicas e no investimento em energias renováveis, além de auxiliar na projeção de necessidades futuras e na adaptação de tecnologias limpas.</p>
+            <p><strong>Exemplo:</strong> Uma matriz energética pode ser usada para prever a demanda por eletricidade em uma cidade com crescimento populacional.</p>
+        </div>
+    </section>
+
+    <section id="calculadora">
+        <div class="container">
+            <h2>Calculadora de Proporção de Energia</h2>
+            <form id="energyForm">
+                <label for="solar">Energia Solar (%):</label>
+                <input type="number" id="solar" name="solar" max="100" required><br>
+                <label for="eolica">Energia Eólica (%):</label>
+                <input type="number" id="eolica" name="eolica" max="100" required><br>
+                <label for="hidreletrica">Energia Hidrelétrica (%):</label>
+                <input type="number" id="hidreletrica" name="hidreletrica" max="100" required><br><br>
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <section id="grafico">
+        <div class="container">
+            <h2>Distribuição de Energia - Gráfico</h2>
+            <canvas id="energyChart"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matrizes Energéticas | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
